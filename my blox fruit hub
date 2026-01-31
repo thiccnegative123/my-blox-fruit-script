@@ -1,0 +1,686 @@
+local gui = Instance.new("ScreenGui", game.Players.LocalPlayer.PlayerGui)
+gui.ResetOnSpawn = false
+local frame = Instance.new("Frame", gui)
+local button = Instance.new("TextButton", frame)
+local button1 = Instance.new("TextButton", frame)
+local button2 = Instance.new("TextButton", frame)
+local button3 = Instance.new("TextButton", frame)
+local button4 = Instance.new("TextButton", frame)
+local button5 = Instance.new("TextButton", frame)
+local button6 = Instance.new("TextButton", frame)
+local button7 = Instance.new("TextButton", frame)
+local button8 = Instance.new("TextButton", frame)
+local button9 = Instance.new("TextButton", frame)
+local button10 = Instance.new("TextButton", frame)
+local button11= Instance.new("TextButton", frame)
+local nextbutton = Instance.new("TextButton", frame)
+local backbutton = Instance.new("TextButton", frame)
+local text = Instance.new("TextLabel", frame)
+local text1 = Instance.new("TextLabel", frame)
+
+frame.Size = UDim2.new(0.3,0,0.3,0)
+frame.Position = UDim2.new(0,675,0,61)
+frame.Draggable = true
+frame.Active = true
+
+button.Size = UDim2.new(0.3,0,0.3,0)
+button.Position = UDim2.new(0,3,0,78)
+button.Draggable = false
+button.Active = true
+button.Text = "fruit esp and tp"
+
+button1.Size = UDim2.new(0.3,0,0.3,0)
+button1.Position = UDim2.new(0,204,0,78)
+button1.Draggable = false
+button1.Active = true
+button1.Text = "player esp"
+
+button2.Size = UDim2.new(0.3,0,0.3,0)
+button2.Position = UDim2.new(0,400,0,78)
+button2.Draggable = false
+button2.Active = true
+button2.Text = "iland esp sea 1 and 2"
+
+button3.Size = UDim2.new(0.3,0,0.1,0)
+button3.Position = UDim2.new(0,193,0,244)
+button3.Draggable = false
+button3.Active = true
+button3.Text = "small server"
+
+button4.Size = UDim2.new(0.3,0,0.1,0)
+button4.Position = UDim2.new(0,7,0,244)
+button4.Draggable = false
+button4.Active = true
+button4.Text = "gacha tp sea 1"
+
+button5.Size = UDim2.new(0.3,0,0.1,0)
+button5.Position = UDim2.new(0,399,0,244)
+button5.Draggable = false
+button5.Active = true
+button5.Text = "gacha tp sea 3"
+
+button6.Size = UDim2.new(0.3,0,0.3,0)
+button6.Position = UDim2.new(0,3,0,78)
+button6.Draggable = false
+button6.Active = true
+button6.Text = "collect nearest chests"
+button6.Visible = false
+
+button7.Size = UDim2.new(0.3,0,0.3,0)
+button7.Position = UDim2.new(0,204,0,78)
+button7.Draggable = false
+button7.Active = true
+button7.Text = "tp sea 1 to sea 2"
+button7.Visible = false
+
+button8.Size = UDim2.new(0.3,0,0.3,0)
+button8.Position = UDim2.new(0,400,0,78)
+button8.Draggable = false
+button8.Active = true
+button8.Text = "tp sea 2 to sea 1"
+button8.Visible = false
+
+button9.Size = UDim2.new(0.3,0,0.1,0)
+button9.Position = UDim2.new(0,7,0,244)
+button9.Draggable = false
+button9.Active = true
+button9.Text = "tp sea 2 to sea 3"
+button9.Visible = false
+
+button10.Size = UDim2.new(0.3,0,0.1,0)
+button10.Position = UDim2.new(0,193,0,244)
+button10.Draggable = false
+button10.Active = true
+button10.Text = "tp sea 3 to sea 2"
+button10.Visible = false
+
+button11.Size = UDim2.new(0.3,0,0.1,0)
+button11.Position = UDim2.new(0,399,0,244)
+button11.Draggable = false
+button11.Active = true
+button11.Text = "awaken/unawaken fruit sea 2"
+button11.Visible = false
+
+nextbutton.Size = UDim2.new(0.3,0,0.1,0)
+nextbutton.Position = UDim2.new(0,404,0,284)
+nextbutton.Draggable = false
+nextbutton.Active = true
+nextbutton.Text = ">"
+nextbutton.TextSize = 30
+
+backbutton.Size = UDim2.new(0.3,0,0.1,0)
+backbutton.Position = UDim2.new(0,0,0,284)
+backbutton.Draggable = false
+backbutton.Active = true
+backbutton.Text = "<"
+backbutton.TextSize = 30
+backbutton.Visible = false
+
+text.Size = UDim2.new(0.3,0,0.3,0)
+text.Position = UDim2.new(0,198,0,-3)
+text.Draggable = false
+text.Active = false
+text.BackgroundTransparency = 1
+text.Text = "BLOX FRUITS FUCKER 5000"
+text.TextSize = 30
+
+text1.Size = UDim2.new(0.3,0,0.3,0)
+text1.Position = UDim2.new(0,197,0,177)
+text1.Draggable = false
+text1.Active = false
+text1.BackgroundTransparency = 1
+text1.Text = "MADE BY HAXAREBEST2"
+text1.TextSize = 30
+
+
+button.MouseButton1Click:Connect(function()
+local Players = game:GetService("Players")
+local UserInputService = game:GetService("UserInputService")
+
+local player = Players.LocalPlayer
+
+-- SETTINGS
+local TEXT_COLOR = Color3.fromRGB(255, 255, 0)
+local OUTLINE_COLOR = Color3.fromRGB(255, 170, 0)
+local FILL_TRANSPARENCY = 1
+local UPDATE_RATE = 0.1
+
+-- Billboard sizes
+local FRUIT_SIZE = UDim2.fromOffset(250, 80)
+local ISLAND_SIZE = UDim2.fromOffset(50, 10) -- half size
+
+-- Store detected fruits
+local Fruits = {}
+
+-- Create ESP
+local function createESP(model, isIsland)
+	if not model:IsA("Model") or not model.PrimaryPart then return end
+	if model:FindFirstChild("ESP_TAG") then return end
+
+	-- Track fruits
+	if not isIsland then
+		table.insert(Fruits, model)
+
+		-- Remove when deleted
+		model.AncestryChanged:Connect(function(_, parent)
+			if not parent then
+				table.remove(Fruits, table.find(Fruits, model))
+			end
+		end)
+	end
+
+	-- Tag
+	local tag = Instance.new("Folder")
+	tag.Name = "ESP_TAG"
+	tag.Parent = model
+
+	-- Highlight
+	local highlight = Instance.new("Highlight")
+	highlight.Adornee = model
+	highlight.FillTransparency = FILL_TRANSPARENCY
+	highlight.OutlineColor = OUTLINE_COLOR
+	highlight.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
+	highlight.Parent = tag
+
+	-- Billboard
+	local billboard = Instance.new("BillboardGui")
+	billboard.Size = isIsland and ISLAND_SIZE or FRUIT_SIZE
+	billboard.StudsOffset = Vector3.new(0, 5, 0)
+	billboard.AlwaysOnTop = true
+	billboard.MaxDistance = math.huge
+	billboard.LightInfluence = 0
+	billboard.Parent = model.PrimaryPart
+
+	local text = Instance.new("TextLabel")
+	text.Size = UDim2.fromScale(1, 1)
+	text.BackgroundTransparency = 1
+	text.TextScaled = true
+	text.TextWrapped = true
+	text.TextColor3 = TEXT_COLOR
+	text.TextStrokeTransparency = 0
+	text.TextStrokeColor3 = Color3.new(0, 0, 0)
+	text.Font = Enum.Font.GothamBold
+	text.Parent = billboard
+
+	-- Distance updater
+	task.spawn(function()
+		while model.Parent do
+			local char = player.Character
+			local hrp = char and char:FindFirstChild("HumanoidRootPart")
+
+			if hrp then
+				local dist = (model.PrimaryPart.Position - hrp.Position).Magnitude
+				text.Text = string.format("%s\n%d studs", model.Name, dist)
+			end
+
+			task.wait(UPDATE_RATE)
+		end
+	end)
+end
+
+-- Initial scan
+for _, obj in ipairs(workspace:GetDescendants()) do
+	if obj:IsA("Model") and obj.PrimaryPart then
+		local name = obj.Name:lower()
+
+		if name:find("fruit") then
+			createESP(obj, false)
+		elseif name:find("island") then
+			createESP(obj, true)
+		end
+	end
+end
+
+-- New spawns
+workspace.DescendantAdded:Connect(function(obj)
+	if not obj:IsA("Model") then return end
+	task.wait(0.2)
+
+	if obj.PrimaryPart then
+		local name = obj.Name:lower()
+
+		if name:find("fruit") then
+			createESP(obj, false)
+		elseif name:find("island") then
+			createESP(obj, true)
+		end
+	end
+end)
+
+-- PC only TP button
+if UserInputService.KeyboardEnabled then
+	local gui = Instance.new("ScreenGui")
+	gui.Name = "FruitTPGui"
+	gui.ResetOnSpawn = false
+	gui.Parent = player:WaitForChild("PlayerGui")
+
+	local button = Instance.new("TextButton")
+	button.Size = UDim2.fromOffset(90, 30)
+	button.Position = UDim2.fromScale(1, 0)
+	button.AnchorPoint = Vector2.new(1, 0)
+	button.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+	button.BorderSizePixel = 0
+	button.Text = "TP Fruit"
+	button.TextColor3 = Color3.fromRGB(255, 255, 0)
+	button.Font = Enum.Font.GothamBold
+	button.TextSize = 14
+	button.Parent = gui
+
+	-- Round corners
+	local corner = Instance.new("UICorner")
+	corner.CornerRadius = UDim.new(0, 8)
+	corner.Parent = button
+
+	button.MouseButton1Click:Connect(function()
+		if #Fruits == 0 then return end
+
+		local char = player.Character or player.CharacterAdded:Wait()
+		local hrp = char:FindFirstChild("HumanoidRootPart")
+		if not hrp then return end
+
+		-- Pick random fruit
+		local fruit = Fruits[math.random(1, #Fruits)]
+		if fruit and fruit.PrimaryPart then
+			-- Teleport player exactly to fruit position
+			hrp.CFrame = fruit.PrimaryPart.CFrame
+		end
+	end)
+end
+
+end)
+
+button1.MouseButton1Click:Connect(function()
+local Players = game:GetService("Players")
+local player = Players.LocalPlayer
+
+-- SETTINGS
+local TEXT_COLOR = Color3.fromRGB(0, 255, 255) -- cyan for players
+local OUTLINE_COLOR = Color3.fromRGB(0, 170, 255)
+local FILL_TRANSPARENCY = 1
+local UPDATE_RATE = 0.1
+
+-- Billboard sizes
+local PLAYER_SIZE = UDim2.fromOffset(125, 40) -- half the size of fruit ESP
+
+-- Create Player ESP
+local function createPlayerESP(targetPlayer)
+	if not targetPlayer.Character or not targetPlayer.Character.PrimaryPart then return end
+	local model = targetPlayer.Character
+	if model:FindFirstChild("PLAYER_ESP_TAG") then return end
+
+	-- Tag
+	local tag = Instance.new("Folder")
+	tag.Name = "PLAYER_ESP_TAG"
+	tag.Parent = model
+
+	-- Highlight
+	local highlight = Instance.new("Highlight")
+	highlight.Adornee = model
+	highlight.FillTransparency = FILL_TRANSPARENCY
+	highlight.OutlineColor = OUTLINE_COLOR
+	highlight.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
+	highlight.Parent = tag
+
+	-- Billboard
+	local billboard = Instance.new("BillboardGui")
+	billboard.Size = PLAYER_SIZE
+	billboard.StudsOffset = Vector3.new(0, 5, 0)
+	billboard.AlwaysOnTop = true
+	billboard.MaxDistance = math.huge
+	billboard.LightInfluence = 0
+	billboard.Parent = model.PrimaryPart
+
+	local text = Instance.new("TextLabel")
+	text.Size = UDim2.fromScale(1, 1)
+	text.BackgroundTransparency = 1
+	text.TextScaled = true
+	text.TextWrapped = true
+	text.TextColor3 = TEXT_COLOR
+	text.TextStrokeTransparency = 0
+	text.TextStrokeColor3 = Color3.new(0, 0, 0)
+	text.Font = Enum.Font.GothamBold
+	text.Parent = billboard
+
+	-- Update player info
+	task.spawn(function()
+		while model.Parent do
+			local hrp = model:FindFirstChild("HumanoidRootPart")
+			local humanoid = model:FindFirstChildOfClass("Humanoid")
+			local myChar = player.Character
+			local myHrp = myChar and myChar:FindFirstChild("HumanoidRootPart")
+
+			if hrp and humanoid and myHrp then
+				local dist = (hrp.Position - myHrp.Position).Magnitude
+				text.Text = string.format("%s\nHP: %d\n%.0f studs", targetPlayer.Name, humanoid.Health, dist)
+			end
+
+			task.wait(UPDATE_RATE)
+		end
+	end)
+end
+
+-- Apply to all existing players
+for _, plr in ipairs(Players:GetPlayers()) do
+	if plr ~= player then
+		createPlayerESP(plr)
+	end
+end
+
+-- Apply to new players joining
+Players.PlayerAdded:Connect(function(plr)
+	if plr ~= player then
+		plr.CharacterAdded:Connect(function()
+			task.wait(0.2) -- small delay to ensure PrimaryPart exists
+			createPlayerESP(plr)
+		end)
+	end
+end)
+
+-- Apply to characters respawning
+for _, plr in ipairs(Players:GetPlayers()) do
+	if plr ~= player then
+		plr.CharacterAdded:Connect(function()
+			task.wait(0.2)
+			createPlayerESP(plr)
+		end)
+	end
+end
+
+end)
+
+button2.MouseButton1Click:Connect(function()
+local Players = game:GetService("Players")
+local player = Players.LocalPlayer
+
+-- SETTINGS
+local TEXT_COLOR = Color3.fromRGB(255, 255, 0)
+local UPDATE_RATE = 0.1
+
+-- Billboard size (DOUBLED)
+local ISLAND_SIZE = UDim2.fromOffset(150, 30)
+
+-- Create ESP function
+local function createESP(model)
+	if not model:IsA("Model") then return end
+	if model:FindFirstChild("ESP_TAG") then return end
+
+	-- Ensure the model has a PrimaryPart
+	if not model.PrimaryPart then
+		local firstPart = model:FindFirstChildWhichIsA("BasePart", true)
+		if not firstPart then return end
+		model.PrimaryPart = firstPart
+	end
+
+	-- Tag folder
+	local tag = Instance.new("Folder")
+	tag.Name = "ESP_TAG"
+	tag.Parent = model
+
+	-- BillboardGui (TEXT ONLY)
+	local billboard = Instance.new("BillboardGui")
+	billboard.Size = ISLAND_SIZE
+	billboard.StudsOffset = Vector3.new(0, 6, 0)
+	billboard.AlwaysOnTop = true
+	billboard.MaxDistance = math.huge
+	billboard.LightInfluence = 0
+	billboard.Parent = model.PrimaryPart
+
+	local text = Instance.new("TextLabel")
+	text.Size = UDim2.fromScale(1, 1)
+	text.BackgroundTransparency = 1
+	text.TextScaled = true
+	text.TextWrapped = true
+	text.TextColor3 = TEXT_COLOR
+	text.TextStrokeTransparency = 0
+	text.TextStrokeColor3 = Color3.new(0, 0, 0)
+	text.Font = Enum.Font.GothamBold
+	text.Parent = billboard
+
+	-- Distance updater
+	task.spawn(function()
+		while model.Parent do
+			local char = player.Character
+			local hrp = char and char:FindFirstChild("HumanoidRootPart")
+			if hrp then
+				local dist = (model.PrimaryPart.Position - hrp.Position).Magnitude
+				text.Text = string.format(
+					"%s Island\n%d studs",
+					model.Name,
+					dist
+				)
+			end
+			task.wait(UPDATE_RATE)
+		end
+	end)
+end
+
+-- Map folder
+local mapFolder = workspace:WaitForChild("Map")
+
+-- Apply ESP to top-level models in Map
+for _, obj in ipairs(mapFolder:GetChildren()) do
+	if obj:IsA("Model") then
+		createESP(obj)
+	end
+end
+
+-- Track new top-level models added to Map
+mapFolder.ChildAdded:Connect(function(obj)
+	if obj:IsA("Model") then
+		task.wait(0.2)
+		createESP(obj)
+	end
+end)
+
+end)
+
+button3.MouseButton1Click:Connect(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/thiccnegative123/idk/refs/heads/main/small%20serverhop"))();
+end)
+
+button4.MouseButton1Click:Connect(function()
+local broken = 0
+
+
+while wait() do
+if broken == 100 then
+break
+end
+local hrp = game.Players.LocalPlayer.Character.HumanoidRootPart
+hrp.CFrame = CFrame.new(-1439.97131, 59.3709946, 5.11972523, 0.114024326, -0.222735539, -0.96818763, 0, 0.974543631, -0.224197775, 0.993477941, 0.025564, 0.111121692)
+broken = broken + 1
+end
+end)
+
+button5.MouseButton1Click:Connect(function()
+local broken = 0
+
+
+while wait() do
+if broken == 100 then
+break
+end
+local hrp = game.Players.LocalPlayer.Character.HumanoidRootPart
+hrp.CFrame = CFrame.new(-12488.9004, 333.293457, -7446.95459, 0.985692143, 0.0582340099, 0.158177018, 0, 0.938423455, -0.345487326, -0.168556139, 0.340544134, 0.924996495)
+broken = broken + 1
+end
+
+end)
+
+button6.MouseButton1Click:Connect(function()
+local Players = game:GetService("Players")
+local UserInputService = game:GetService("UserInputService")
+
+local player = Players.LocalPlayer
+
+-- SETTINGS
+local COOLDOWN_PER_CHEST = 0.2
+local CHECK_DELAY = 0.1
+local BUTTON_OFFSET_Y = 0.07
+
+local chestFolder = workspace:WaitForChild("ChestModels")
+
+local running = false
+local loopThread
+
+-- PC only
+if UserInputService.KeyboardEnabled then
+	local gui = Instance.new("ScreenGui")
+	gui.Name = "ChestTPGui"
+	gui.ResetOnSpawn = false
+	gui.Parent = player:WaitForChild("PlayerGui")
+
+	local button = Instance.new("TextButton")
+	button.Size = UDim2.fromOffset(110, 35)
+	button.Position = UDim2.fromScale(1, BUTTON_OFFSET_Y)
+	button.AnchorPoint = Vector2.new(1, 0)
+	button.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+	button.BorderSizePixel = 0
+	button.Text = "TP Chest"
+	button.TextColor3 = Color3.fromRGB(255, 200, 0)
+	button.Font = Enum.Font.GothamBold
+	button.TextSize = 14
+	button.Parent = gui
+
+	local corner = Instance.new("UICorner")
+	corner.CornerRadius = UDim.new(0, 8)
+	corner.Parent = button
+
+	local function startLoop()
+		loopThread = task.spawn(function()
+			while running do
+				local char = player.Character
+				local hrp = char and char:FindFirstChild("HumanoidRootPart")
+
+				if hrp then
+					for _, chest in ipairs(chestFolder:GetChildren()) do
+						if not running then break end
+						if chest:IsA("Model") and chest.PrimaryPart then
+							hrp.CFrame = chest.PrimaryPart.CFrame
+							task.wait(COOLDOWN_PER_CHEST)
+						end
+					end
+				end
+
+				task.wait(CHECK_DELAY)
+			end
+		end)
+	end
+
+	button.MouseButton1Click:Connect(function()
+		running = not running
+
+		if running then
+			button.Text = "STOP TP"
+			startLoop()
+		else
+			button.Text = "TP Chest"
+		end
+	end)
+end
+
+end)
+
+button7.MouseButton1Click:Connect(function()
+local broken = 0
+
+
+while wait() do
+if broken == 100 then
+break
+end
+local hrp = game.Players.LocalPlayer.Character.HumanoidRootPart
+hrp.CFrame = CFrame.new(-1163.71277, 4.00504208, 1727.1001, 0.315150738, 0.511792421, 0.799217463, -1.49011594e-08, 0.842131078, -0.539272904, -0.949041605, 0.169952244, 0.265398234)
+broken = broken + 1
+end
+end)
+
+button8.MouseButton1Click:Connect(function()
+local broken = 0
+
+
+while wait() do
+if broken == 100 then
+break
+end
+local hrp = game.Players.LocalPlayer.Character.HumanoidRootPart
+hrp.CFrame = CFrame.new(107.348396, 15.656929, 2832.39233, 0.231807962, 0.327935398, 0.915818512, 0, 0.941462517, -0.33711797, -0.972761571, 0.078146629, 0.218238488)
+broken = broken + 1
+end
+end)
+
+button9.MouseButton1Click:Connect(function()
+local broken = 0
+
+
+while wait() do
+if broken == 100 then
+break
+end
+local hrp = game.Players.LocalPlayer.Character.HumanoidRootPart
+hrp.CFrame = CFrame.new(-1907.84827, 2.80291128, -2533.81714, 0.683988154, 0.327745855, 0.651723087, -2.98023259e-08, 0.893391728, -0.449278802, -0.729493201, 0.307301342, 0.611069262)
+broken = broken + 1
+end
+end)
+
+button10.MouseButton1Click:Connect(function()
+local broken = 0
+
+
+while wait() do
+if broken == 100 then
+break
+end
+local hrp = game.Players.LocalPlayer.Character.HumanoidRootPart
+hrp.CFrame = CFrame.new(-384.961609, 16.9779453, 5439.91357, -0.872378707, 0.21175994, 0.440582842, 0, 0.901299357, -0.433196813, -0.488830775, -0.377911687, -0.786274314)
+broken = broken + 1
+end
+end)
+
+button11.MouseButton1Click:Connect(function()
+local broken = 0
+
+
+while wait() do
+if broken == 100 then
+break
+end
+local hrp = game.Players.LocalPlayer.Character.HumanoidRootPart
+hrp.CFrame = CFrame.new(-412.249817, 12.3317127, 247.136612, -0.495707095, -0.688325882, -0.529605567, 0, 0.609800577, -0.792554975, 0.868489742, -0.392875135, -0.302282482)
+broken = broken + 1
+end
+end)
+
+nextbutton.MouseButton1Click:Connect(function()
+button.Visible = false
+button1.Visible = false
+button2.Visible = false
+button3.Visible = false
+button4.Visible = false
+button5.Visible = false
+nextbutton.Visible = false
+button6.Visible = true
+button7.Visible = true
+button8.Visible = true
+button9.Visible = true
+button10.Visible = true
+button11.Visible = true
+backbutton.Visible = true
+end)
+
+backbutton.MouseButton1Click:Connect(function()
+button.Visible = true
+button1.Visible = true
+button2.Visible = true
+button3.Visible = true
+button4.Visible = true
+button5.Visible = true
+nextbutton.Visible = true
+button6.Visible = false
+button7.Visible = false
+button8.Visible = false
+button9.Visible = false
+button10.Visible = false
+button11.Visible = false
+backbutton.Visible = false
+end)
