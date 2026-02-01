@@ -1,0 +1,299 @@
+local gui = Instance.new("ScreenGui", game.Players.LocalPlayer.PlayerGui)
+gui.ResetOnSpawn = false
+local frame = Instance.new("Frame", gui)
+local button = Instance.new("TextButton", frame)
+local button1 = Instance.new("TextButton", frame)
+local button2 = Instance.new("TextButton", frame)
+local button3 = Instance.new("TextButton", frame)
+local button4 = Instance.new("TextButton", frame)
+local button5 = Instance.new("TextButton", frame)
+local button6 = Instance.new("TextButton", frame)
+local button7 = Instance.new("TextButton", frame)
+local button8 = Instance.new("TextButton", frame)
+local button9 = Instance.new("TextButton", frame)
+local button10 = Instance.new("TextButton", frame)
+local text = Instance.new("TextLabel", frame)
+local text1 = Instance.new("TextLabel", frame)
+local text2 = Instance.new("TextLabel", frame)
+
+frame.Size = UDim2.new(0.3,0,0.3,0)
+frame.Position = UDim2.new(0,675,0,61)
+frame.Draggable = true
+frame.Active = true
+
+button.Size = UDim2.new(0.15,0,0.15,0)
+button.Position = UDim2.new(0,0,0,40)
+button.Draggable = false
+button.Active = true
+button.Text = "tp Port iland"
+
+button1.Size = UDim2.new(0.15,0,0.15,0)
+button1.Position = UDim2.new(0,111,0,40)
+button1.Draggable = false
+button1.Active = true
+button1.Text = "tp Hydra iland"
+
+button2.Size = UDim2.new(0.15,0,0.15,0)
+button2.Position = UDim2.new(0,223,0,40)
+button2.Draggable = false
+button2.Active = true
+button2.Text = "tp Great Tree"
+
+button3.Size = UDim2.new(0.15,0,0.15,0)
+button3.Position = UDim2.new(0,337,0,40)
+button3.Draggable = false
+button3.Active = true
+button3.Text = "tp Floating Turtle"
+
+button4.Size = UDim2.new(0.15,0,0.15,0)
+button4.Position = UDim2.new(0,457,0,40)
+button4.Draggable = false
+button4.Active = true
+button4.Text = "tp Haunted Castle"
+
+button5.Size = UDim2.new(0.15,0,0.15,0)
+button5.Position = UDim2.new(0,0,0,90)
+button5.Draggable = false
+button5.Active = true
+button5.Text = "tp Sea of Treats"
+
+button6.Size = UDim2.new(0.15,0,0.15,0)
+button6.Position = UDim2.new(0,111,0,90)
+button6.Draggable = false
+button6.Active = true
+button6.Text = "tp Tiki Outpost"
+
+button7.Size = UDim2.new(0.15,0,0.15,0)
+button7.Position = UDim2.new(0,223,0,90)
+button7.Draggable = false
+button7.Active = true
+button7.Text = "tp underwater world"
+
+button8.Size = UDim2.new(0.15,0,0.15,0)
+button8.Position = UDim2.new(0,337,0,90)
+button8.Draggable = false
+button8.Active = true
+button8.Text = "tp Castle of the sea"
+
+button9.Size = UDim2.new(0.15,0,0.15,0)
+button9.Position = UDim2.new(0,457,0,90)
+button9.Draggable = false
+button9.Active = true
+button9.Text = "tp Mansion"
+
+button10.Size = UDim2.new(0.15,0,0.15,0)
+button10.Position = UDim2.new(0,0,0,140)
+button10.Draggable = false
+button10.Active = true
+button10.Text = "tp near dragon dojo"
+button10.TextSize = 7
+
+
+
+text.Size = UDim2.new(0.3,0,0.3,0)
+text.Position = UDim2.new(0,50,0,-34)
+text.Draggable = false
+text.Active = false
+text.BackgroundTransparency = 1
+text.Text = "ILAND FINDER (SEA 3) 5000"
+text.TextSize = 15
+
+text1.Size = UDim2.new(0.3,0,0.3,0)
+text1.Position = UDim2.new(0,360,0,-34)
+text1.Draggable = false
+text1.Active = false
+text1.BackgroundTransparency = 1
+text1.Text = "MADE BY HAXAREBEST2"
+text1.TextSize = 15
+
+text2.Size = UDim2.new(0.3,0,0.3,0)
+text2.Position = UDim2.new(0,149,0,158)
+text2.Draggable = false
+text2.Active = false
+text2.BackgroundTransparency = 1
+text2.Text = "it wont work if the iland is over 10k studs away from u    (it resets you)"
+text2.TextSize = 11
+
+button.MouseButton1Click:Connect(function()
+local broken = 0
+
+
+while wait() do
+if broken == 40 then
+game.Players.LocalPlayer.Character.Humanoid.Health = 0
+end
+if broken == 40 then
+break
+end
+local hrp = game.Players.LocalPlayer.Character.HumanoidRootPart
+hrp.CFrame = CFrame.new(-200.553787, 8.18687057, 5451.16895, 0.997205138, 0.0313250832, 0.0678281412, 0, 0.907858551, -0.419276506, -0.0747122318, 0.418104678, 0.90532124)
+broken = broken + 1
+end
+end)
+
+button1.MouseButton1Click:Connect(function()
+local broken = 0
+
+
+while wait() do
+if broken == 40 then
+game.Players.LocalPlayer.Character.Humanoid.Health = 0
+end
+if broken == 40 then
+break
+end
+local hrp = game.Players.LocalPlayer.Character.HumanoidRootPart
+hrp.CFrame = CFrame.new(3527.92969, 49.4151192, 1801.70056, 0.999583006, 0.00800301041, 0.0277458616, 9.31322575e-10, 0.960829198, -0.277141362, -0.0288769994, 0.277025789, 0.960428476)
+broken = broken + 1
+end
+end)
+
+button2.MouseButton1Click:Connect(function()
+local broken = 0
+
+
+while wait() do
+if broken == 40 then
+game.Players.LocalPlayer.Character.Humanoid.Health = 0
+end
+if broken == 40 then
+break
+end
+local hrp = game.Players.LocalPlayer.Character.HumanoidRootPart
+hrp.CFrame = CFrame.new(1983.16687, 18.0805054, -6638.09668, 0.439305127, -0.310856819, -0.842839897, 0, 0.938221514, -0.34603548, 0.89833802, 0.152015164, 0.412165463)
+broken = broken + 1
+end
+end)
+
+button3.MouseButton1Click:Connect(function()
+local broken = 0
+
+
+while wait() do
+if broken == 40 then
+game.Players.LocalPlayer.Character.Humanoid.Health = 0
+end
+if broken == 40 then
+break
+end
+local hrp = game.Players.LocalPlayer.Character.HumanoidRootPart
+hrp.CFrame = CFrame.new(-11331.6855, 328.098846, -10344.1055, -0.347377747, 0.350876451, 0.869605899, 0, 0.927356839, -0.374178261, -0.937725365, -0.129981205, -0.322143078)
+broken = broken + 1
+end
+end)
+
+button4.MouseButton1Click:Connect(function()
+local broken = 0
+
+
+while wait() do
+if broken == 40 then
+game.Players.LocalPlayer.Character.Humanoid.Health = 0
+end
+if broken == 40 then
+break
+end
+local hrp = game.Players.LocalPlayer.Character.HumanoidRootPart
+hrp.CFrame = CFrame.new(-9348.54297, 139.679459, 5626.67676, 0.265849233, 0.0769189298, 0.960940957, -1.86264559e-09, 0.996811688, -0.0797902048, -0.964014709, 0.0212121624, 0.265001565)
+broken = broken + 1
+end
+end)
+
+button5.MouseButton1Click:Connect(function()
+local broken = 0
+
+
+while wait() do
+if broken == 40 then
+game.Players.LocalPlayer.Character.Humanoid.Health = 0
+end
+if broken == 40 then
+break
+end
+local hrp = game.Players.LocalPlayer.Character.HumanoidRootPart
+hrp.CFrame = CFrame.new(-2152.70166, 33.3995667, -10015.9443, 0.67032969, 0.107864231, 0.734182179, 0, 0.989379287, -0.145357147, -0.742063463, 0.0974372104, 0.663210273)
+broken = broken + 1
+end
+end)
+
+button6.MouseButton1Click:Connect(function()
+local broken = 0
+
+
+while wait() do
+if broken == 40 then
+game.Players.LocalPlayer.Character.Humanoid.Health = 0
+end
+if broken == 40 then
+break
+end
+local hrp = game.Players.LocalPlayer.Character.HumanoidRootPart
+hrp.CFrame = CFrame.new(-16228.2539, 5.45839739, 479.844452, 0.649632692, 0.144243822, 0.74643898, -7.4505806e-09, 0.981835902, -0.189732522, -0.760248303, 0.123256445, 0.637832642)
+broken = broken + 1
+end
+end)
+
+button7.MouseButton1Click:Connect(function()
+local broken = 0
+
+
+while wait() do
+if broken == 100 then
+break
+end
+local hrp = game.Players.LocalPlayer.Character.HumanoidRootPart
+hrp.CFrame = CFrame.new(-16270.7578, 21.5630932, 1372.9707, -0.00697188126, -0.397788882, -0.917450547, 0, 0.917472959, -0.397798508, 0.999975801, -0.00277340389, -0.00639651064)
+broken = broken + 1
+end
+end)
+
+button8.MouseButton1Click:Connect(function()
+local broken = 0
+
+
+while wait() do
+if broken == 40 then
+game.Players.LocalPlayer.Character.Humanoid.Health = 0
+end
+if broken == 40 then
+break
+end
+local hrp = game.Players.LocalPlayer.Character.HumanoidRootPart
+hrp.CFrame = CFrame.new(-4833.63037, 312.023163, -2893.50854, 0.651072145, 0.103283405, 0.751955867, 0, 0.990698457, -0.136075437, -0.759015799, 0.0885949284, 0.645016253)
+broken = broken + 1
+end
+
+end)
+
+button9.MouseButton1Click:Connect(function()
+local broken = 0
+
+while wait() do
+if broken == 40 then
+game.Players.LocalPlayer.Character.Humanoid.Health = 0
+end
+if broken == 40 then
+break
+end
+local hrp = game.Players.LocalPlayer.Character.HumanoidRootPart
+hrp.CFrame = CFrame.new(-12651.4932, 371.309509, -7569.85889, -0.212285355, -0.209727481, -0.9544366, 0, 0.976697743, -0.214619145, 0.97720772, -0.0455605015, -0.207338631)
+broken = broken + 1
+end
+end)
+
+button10.MouseButton1Click:Connect(function()
+local broken = 0
+
+
+while wait() do
+if broken == 40 then
+game.Players.LocalPlayer.Character.Humanoid.Health = 0
+end
+if broken == 40 then
+break
+end
+local hrp = game.Players.LocalPlayer.Character.HumanoidRootPart
+hrp.CFrame = CFrame.new(5728.32422, 1203.21875, 966.125854, 0.959177554, 0.0511514843, 0.278140336, -3.7252903e-09, 0.98350668, -0.180872083, -0.282804728, 0.173488438, 0.943357408)
+broken = broken + 1
+end
+end)
