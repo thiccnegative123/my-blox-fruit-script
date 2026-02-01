@@ -70,35 +70,35 @@ button7.Size = UDim2.new(0.3,0,0.3,0)
 button7.Position = UDim2.new(0,204,0,78)
 button7.Draggable = false
 button7.Active = true
-button7.Text = "tp sea 1 to sea 2"
+button7.Text = "awaken/unawaken fruit sea 2"
 button7.Visible = false
 
 button8.Size = UDim2.new(0.3,0,0.3,0)
 button8.Position = UDim2.new(0,400,0,78)
 button8.Draggable = false
 button8.Active = true
-button8.Text = "tp sea 2 to sea 1"
+button8.Text = "tp to ilands (sea 1)"
 button8.Visible = false
 
 button9.Size = UDim2.new(0.3,0,0.1,0)
 button9.Position = UDim2.new(0,7,0,244)
 button9.Draggable = false
 button9.Active = true
-button9.Text = "tp sea 2 to sea 3"
+button9.Text = "tp to ilands (sea 2)"
 button9.Visible = false
 
 button10.Size = UDim2.new(0.3,0,0.1,0)
 button10.Position = UDim2.new(0,193,0,244)
 button10.Draggable = false
 button10.Active = true
-button10.Text = "tp sea 3 to sea 2"
+button10.Text = "tp to ilands (sea 3)"
 button10.Visible = false
 
 button11.Size = UDim2.new(0.3,0,0.1,0)
 button11.Position = UDim2.new(0,399,0,244)
 button11.Draggable = false
 button11.Active = true
-button11.Text = "awaken/unawaken fruit sea 2"
+button11.Text = "cumming soon"
 button11.Visible = false
 
 nextbutton.Size = UDim2.new(0.3,0,0.1,0)
@@ -590,65 +590,25 @@ if broken == 100 then
 break
 end
 local hrp = game.Players.LocalPlayer.Character.HumanoidRootPart
-hrp.CFrame = CFrame.new(-1163.71277, 4.00504208, 1727.1001, 0.315150738, 0.511792421, 0.799217463, -1.49011594e-08, 0.842131078, -0.539272904, -0.949041605, 0.169952244, 0.265398234)
+hrp.CFrame = CFrame.new(-412.249817, 12.3317127, 247.136612, -0.495707095, -0.688325882, -0.529605567, 0, 0.609800577, -0.792554975, 0.868489742, -0.392875135, -0.302282482)
 broken = broken + 1
 end
 end)
 
 button8.MouseButton1Click:Connect(function()
-local broken = 0
-
-
-while wait() do
-if broken == 100 then
-break
-end
-local hrp = game.Players.LocalPlayer.Character.HumanoidRootPart
-hrp.CFrame = CFrame.new(107.348396, 15.656929, 2832.39233, 0.231807962, 0.327935398, 0.915818512, 0, 0.941462517, -0.33711797, -0.972761571, 0.078146629, 0.218238488)
-broken = broken + 1
-end
+loadstring(game:HttpGet("https://raw.githubusercontent.com/thiccnegative123/my-blox-fruit-script/refs/heads/main/tp%20to%20iland%20(sea%201)"))()
 end)
 
 button9.MouseButton1Click:Connect(function()
-local broken = 0
-
-
-while wait() do
-if broken == 100 then
-break
-end
-local hrp = game.Players.LocalPlayer.Character.HumanoidRootPart
-hrp.CFrame = CFrame.new(-1907.84827, 2.80291128, -2533.81714, 0.683988154, 0.327745855, 0.651723087, -2.98023259e-08, 0.893391728, -0.449278802, -0.729493201, 0.307301342, 0.611069262)
-broken = broken + 1
-end
+loadstring(game:HttpGet("https://raw.githubusercontent.com/thiccnegative123/my-blox-fruit-script/refs/heads/main/tp%20to%20iland%20(sea%202)"))()
 end)
 
 button10.MouseButton1Click:Connect(function()
-local broken = 0
-
-
-while wait() do
-if broken == 100 then
-break
-end
-local hrp = game.Players.LocalPlayer.Character.HumanoidRootPart
-hrp.CFrame = CFrame.new(-384.961609, 16.9779453, 5439.91357, -0.872378707, 0.21175994, 0.440582842, 0, 0.901299357, -0.433196813, -0.488830775, -0.377911687, -0.786274314)
-broken = broken + 1
-end
+loadstring(game:HttpGet("https://raw.githubusercontent.com/thiccnegative123/my-blox-fruit-script/refs/heads/main/tp%20to%20iland%20(sea%203)"))()
 end)
 
 button11.MouseButton1Click:Connect(function()
-local broken = 0
 
-
-while wait() do
-if broken == 100 then
-break
-end
-local hrp = game.Players.LocalPlayer.Character.HumanoidRootPart
-hrp.CFrame = CFrame.new(-412.249817, 12.3317127, 247.136612, -0.495707095, -0.688325882, -0.529605567, 0, 0.609800577, -0.792554975, 0.868489742, -0.392875135, -0.302282482)
-broken = broken + 1
-end
 end)
 
 nextbutton.MouseButton1Click:Connect(function()
