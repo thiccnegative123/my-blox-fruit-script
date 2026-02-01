@@ -1,0 +1,96 @@
+local gui = Instance.new("ScreenGui", game.Players.LocalPlayer.PlayerGui)
+gui.ResetOnSpawn = false
+local frame = Instance.new("Frame", gui)
+local button = Instance.new("TextButton", frame)
+local button1 = Instance.new("TextButton", frame)
+local button2 = Instance.new("TextButton", frame)
+local text = Instance.new("TextLabel", frame)
+local text1 = Instance.new("TextLabel", frame)
+
+frame.Size = UDim2.new(0.2,0,0.2)
+frame.Position = UDim2.new(0,1014,0,39)
+frame.Active = true
+frame.Draggable = true
+
+button.Size = UDim2.new(0.3,0,0.2)
+button.Position = UDim2.new(0,1,0,76)
+button.Active = true
+button.Draggable = false
+button.Text = "Runner sea 1"
+
+button1.Size = UDim2.new(0.3,0,0.2)
+button1.Position = UDim2.new(0,138,0,76)
+button1.Active = true
+button1.Draggable = false
+button1.Text = "Runner sea 2"
+
+button2.Size = UDim2.new(0.3,0,0.2)
+button2.Position = UDim2.new(0,269,0,76)
+button2.Active = true
+button2.Draggable = false
+button2.Text = "Runner sea 3"
+
+text.Size = UDim2.new(0.3,0,0.2)
+text.Position = UDim2.new(0,130,0,137)
+text.Active = false
+text.Draggable = false
+text.BackgroundTransparency = 1
+text.Text = "made by haxarebest2"
+text.TextSize = 28
+
+text1.Size = UDim2.new(0.3,0,0.2)
+text1.Position = UDim2.new(0,137,0,14)
+text1.Active = false
+text1.Draggable = false
+text1.BackgroundTransparency = 1
+text1.Text = "runner fucker 5000"
+text1.TextSize = 33
+
+
+button.MouseButton1Click:Connect(function()
+local broken = 39
+
+
+while wait() do
+if broken == 20 then
+game.Players.LocalPlayer.Character.Humanoid.Health = 0
+end
+if broken == 40 then
+break
+end
+local hrp = game.Players.LocalPlayer.Character.HumanoidRootPart
+hrp.CFrame = CFrame.new(4025.26416, -1.49270487, -1819.59558, 0.490086347, 0.0490992069, 0.870290041, 1.86264493e-09, 0.99841243, -0.0563274957, -0.871673882, 0.027605338, 0.489308298)
+broken = broken + 1
+end
+end)
+
+button1.MouseButton1Click:Connect(function()
+local broken = 50
+
+
+while wait() do
+if broken == 40 then
+game.Players.LocalPlayer.Character.Humanoid.Health = 0
+end
+if broken == 51 then
+break
+end
+local hrp = game.Players.LocalPlayer.Character.HumanoidRootPart
+hrp.CFrame = CFrame.new(-6500.91455, 79.9662857, -123.177612, 0.975223184, 0.040786121, 0.217431277, 0, 0.982857764, -0.184366062, -0.221223578, 0.179798052, 0.958505511)
+broken = broken + 1
+end
+end)
+
+button2.MouseButton1Click:Connect(function()
+local broken = 0
+
+
+while wait() do
+if broken == 200 then
+break
+end
+local hrp = game.Players.LocalPlayer.Character.HumanoidRootPart
+hrp.CFrame = CFrame.new(-16268.0479, 21.5549812, 1373.18726, -0.423662543, -0.415843904, -0.804725945, 0, 0.888394833, -0.45908004, 0.905820072, -0.194495022, -0.376379639)
+broken = broken + 1
+end
+end)
