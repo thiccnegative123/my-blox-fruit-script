@@ -98,7 +98,7 @@ button11.Size = UDim2.new(0.3,0,0.1,0)
 button11.Position = UDim2.new(0,399,0,244)
 button11.Draggable = false
 button11.Active = true
-button11.Text = "cumming soon"
+button11.Text = "escape player gui"
 button11.Visible = false
 
 nextbutton.Size = UDim2.new(0.3,0,0.1,0)
@@ -608,7 +608,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/thiccnegative123/my-b
 end)
 
 button11.MouseButton1Click:Connect(function()
-
+loadstring(game:HttpGet("https://raw.githubusercontent.com/thiccnegative123/my-blox-fruit-script/refs/heads/main/runner%20script"))()
 end)
 
 nextbutton.MouseButton1Click:Connect(function()
